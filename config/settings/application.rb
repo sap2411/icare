@@ -7,17 +7,17 @@
 # SET SENSITIVE DATA ONLY IN 'local.rb'
 
 SimpleConfig.for :application do
-  set :app_name, 'icare'
-  set :repository_url, 'https://github.com/diowa/icare'
+  set :app_name, 'Veda Rideshare'
+  set :repository_url, 'https://github.com/Asimov4/icare'
 
-  set :advertising, true
+  set :advertising, false
   set :demo_mode, true
   set :base_url, 'localhost:3000'
   set :single_process_mode, true
 
-  set :currency, '.00 €'
+  set :currency, '.00 $'
   set :fuel_consumption, 0.12
-  set :fuel_currency, '€'
+  set :fuel_currency, '$'
 
   set :costs_calculation_service_link, 'http://servizi.aci.it/CKInternet/'
 
@@ -40,7 +40,7 @@ SimpleConfig.for :application do
 
   group :map do
     # defaults to Italy
-    set :center, [41.87194, 12.567379999999957]
+    set :center, [47.608013, -122.335167]
     set :zoom, 8
   end
 
