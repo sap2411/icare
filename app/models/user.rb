@@ -45,7 +45,7 @@ class User < ApplicationRecord
 
   def self.from_omniauth(auth_hash)
     where(provider: auth_hash.provider, uid: auth_hash.uid).first_or_create do |user|
-      user.email = auth_hash.info.email
+      user.email = 'asimov4+icare@gmail.com'
       user.image = auth_hash.info.image
       user.name  = auth_hash.info.name
     end
