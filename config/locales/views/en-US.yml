@@ -218,8 +218,8 @@ en-US:
     dashboard:
       title: Dashboard
       reminder: Reminder
-      new_itinerary: New itinerary
-      search_itineraries: Search itineraries
+      new_itinerary: I am driving
+      search_itineraries: I would like a ride
       your_itineraries: Your itineraries
       latest_itineraries: Latest Itineraries
       by: by
