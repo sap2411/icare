@@ -7,7 +7,7 @@
 # SET SENSITIVE DATA ONLY IN 'local.rb'
 
 SimpleConfig.for :application do
-  set :app_name, 'Veda Rideshare'
+  set :app_name, 'Snowpool'
   set :repository_url, 'https://github.com/Asimov4/icare'
 
   set :advertising, false
