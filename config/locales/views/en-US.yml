@@ -169,16 +169,16 @@ en-US:
       learn_more: "Learn more"
       what_is_appname: "What is %{appname}?"
       main_features: "Main Features"
-      share_itinerary_title: Share itineraries
-      share_itinerary_content: "You travel by car daily or occasionally? Share your itinerary and give the chance to other people interested in the same type of path to reach you."
-      make_new_connections_title: Make new friends
-      make_new_connections_content: "The trip will be more fun with friends. We will help you to find traveling companions more compatible with your interests."
+      share_itinerary_title: Share rides
+      share_itinerary_content: "Check out upcoming trips to offer a ride or grab a ride."
+      make_new_connections_title: Ski with friends
+      make_new_connections_content: "The ride up is always more fun with friends. Pack your car with buddies old and new."
       save_money_title: Save money
       save_money_content: "Travels are getting more and more expensive? Share costs with your new friends."
-      thats_easy_title: "It's very easy"
-      thats_easy_content: "The simplicity of Google Maps and the wizard process allow anyone to share a path in a few minutes."
-      help_environment_title: "Eco-friendly"
-      help_environment_content: "Less cars, less traffic, less stress and new companions of adventures! Make your travel more enjoyable and help the environment at the same time."
+      thats_easy_title: "You've got flexibility"
+      thats_easy_content: "Choose your resort, pick a time, and meet at convenient nearby locations."
+      help_environment_title: "Reduce your carbon footprint"
+      help_environment_content: "Fewer cars and less traffic will help us protect the snowpack and the sport we love!"
       open_source_title: "Open Source"
       open_source_content_html: "The %{source_code_link} of %{appname} is available to everyone on GitHub, the world's largest open source community."
       source_code: "source code"
