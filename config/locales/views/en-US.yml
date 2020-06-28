@@ -262,11 +262,11 @@ en-US:
       search: Search
       verified_users: Verified users
     index:
-      title: Search itineraries
+      title: Search rides
     show:
       contact: "Contact %{user}"
       send_reference: Send a reference
-      report_itinerary: "Report this itinerary"
+      report_itinerary: "Report this ride"
       login_to_contact: "Log in to contact this user"
     header:
       app_user: "A user of %{appname}"
@@ -278,15 +278,15 @@ en-US:
         allowed: Pets allowed
         forbidden: Pets forbidden
     edit:
-      title: "Edit itinerary"
+      title: "Edit ride"
     new:
-      title: New itinerary
+      title: New ride
       step_1: Step 1
       step_2: Step 2
       step_3: Step 3
       plan_route: Set up the route
-      insert_itinerary_details: "Insert itinerary details"
-      insert_details_and_confirm: "Inserisci i dettagli e conferma"
+      insert_itinerary_details: "Insert ride details"
+      insert_details_and_confirm: "Insert ride details and confirm"
       confirm_and_share: "Confirm and share"
       next_step: "Next step"
       previous_step: "Back"
@@ -296,21 +296,21 @@ en-US:
       duration: Duration
       hint_privacy_title: "A little bit of privacy"
       hint_privacy_content: "Are you concerned of your privacy? Do not be too specific in setting the path. Select major streets near the point of departure and the point of destination."
-      hint_customize_title: "Customize your itinerary"
+      hint_customize_title: "Customize your ride"
       hint_customize_content: "You use an alternative route because you have to go to your mother-in-law? Drag the path to achieve the desired route."
       hint_search_before_title: "Search before"
-      hint_search_before_content_html: "What if your itinerary is already here? %{search_link} among the available itineraries and check if there is one that matches your needs."
+      hint_search_before_content_html: "What if your ride is already here? %{search_link} among the available rides and check if there is one that matches your needs."
       search_link: "Search"
     form:
-      description_hint: "Enter a brief description of your itinerary. If there are things that your fellow travelers need to know, add them here (example: \"loud music in the car!\")."
-      single_itinerary: Single Itinerary
-      daily_itinerary: Daily Itinerary
+      description_hint: "Enter a brief description of your ride. If there are things that your fellow travelers need to know, add them here (example: \"loud music in the car!\")."
+      single_itinerary: Single Ride
+      daily_itinerary: Daily Ride
       day: Day
       leave_time: Leave time
       return_time: Return time
       edit_all_times: Edit all times
       more_accurate_data: "Need more accurate data for your vehicle?"
-      pink_hint: Pink itineraries can be created only by women and are visible only to women.
+      pink_hint: Pink rides can be created only by women and are visible only to women.
 
   feedbacks:
     index:
