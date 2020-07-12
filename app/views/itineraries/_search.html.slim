@@ -1,6 +1,6 @@
 = simple_form_for Itineraries::Search.new, url: search_itineraries_path, method: :post, validate: true, remote: true do |f|
   = f.input :from, label: Itinerary.human_attribute_name(:start_address)
-  = f.input :to, label: Itinerary.human_attribute_name(:end_address)
+  = f.input :to, label: Itinerary.human_attribute_name(:end_address), collection: ['Crystal Mountain','Stevens Pass','Snoqualmie Pass','Mount Baker Ski']
   a.collapse-link.collapsed role='button' data-toggle='collapse' href='#search-form-advanced-j' aria-expanded='false' aria-controls='search-form-advanced-j'
     span.fas.fa-chevron-down.icon--collapse<> aria-hidden='true'
     = t('.advanced_search')
