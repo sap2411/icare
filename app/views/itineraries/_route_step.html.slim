@@ -1,7 +1,7 @@
 .row
   .col-sm-4
     = f.input :start_address
-    = f.input :end_address
+    = f.input :end_address, collection: ['Crystal Mountain','Stevens Pass','Snoqualmie Pass','Mount Baker Ski']
     = f.input :avoid_highways, as: :boolean
     = f.input :avoid_tolls, as: :boolean
     .form-group
