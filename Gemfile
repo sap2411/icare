@@ -8,7 +8,7 @@ git_source(:github) do |repo_name|
 end
 
 ruby '2.7.1'
-gem 'rails', '6.0.2.2'
+gem 'rails', '6.0.3.2'
 
 # Use postgresql as the database for Active Record
 gem 'activerecord-postgis-adapter', '~> 6.0'
@@ -36,8 +36,8 @@ gem 'jbuilder', '~> 2.10'
 gem 'simple_form', '~> 5.0'
 
 # ODM and related
-gem 'client_side_validations', '~> 16.2'
-gem 'client_side_validations-simple_form', '~> 10.1'
+gem 'client_side_validations', '~> 17.0'
+gem 'client_side_validations-simple_form', '~> 11.0'
 gem 'friendly_id', '~> 5.2'
 gem 'kaminari', '~> 1.2'
 gem 'validates_timeliness', '~> 4.1'
@@ -53,7 +53,7 @@ gem 'koala', '~> 3.0'
 gem 'omniauth-facebook', '~> 6.0'
 
 # Performance
-gem 'newrelic_rpm', '~> 6.10'
+gem 'newrelic_rpm', '~> 6.11'
 
 # Security
 gem 'secure_headers', '~> 6.3'
@@ -61,11 +61,10 @@ gem 'secure_headers', '~> 6.3'
 # Miscellanea
 gem 'addressable', '~> 2.7'
 gem 'http_accept_language', '~> 2.1'
-gem 'jquery-rails', '~> 4.3'
 gem 'slim-rails', '~> 3.2'
 
 # Assets
-gem 'i18n-js', '~> 3.6'
+gem 'i18n-js', '~> 3.7'
 gem 'inline_svg', '~> 1.7'
 gem 'turbolinks', '~> 5.2'
 
@@ -75,17 +74,17 @@ gem 'airbrake', '~> 10.0'
 group :development, :test do
   gem 'bullet', '~> 6.1'
   gem 'byebug', '~> 11.1'
-  gem 'factory_bot_rails', '~> 5.2'
-  gem 'faker', '~> 2.11'
+  gem 'factory_bot_rails', '~> 6.1'
+  gem 'faker', '~> 2.13'
   gem 'pry', '~> 0.13.1'
   gem 'pry-byebug', '~> 3.9'
   gem 'pry-rails', '~> 0.3.9'
   gem 'rspec-rails', '~> 4.0'
-  gem 'rubocop', '~> 0.82.0', require: false
-  gem 'rubocop-performance', '~> 1.5', require: false
-  gem 'rubocop-rails', '~> 2.5', require: false
-  gem 'rubocop-rspec', '~> 1.38', require: false
-  gem 'slim_lint', '~> 0.20.0', require: false
+  gem 'rubocop', '~> 0.87.1', require: false
+  gem 'rubocop-performance', '~> 1.7', require: false
+  gem 'rubocop-rails', '~> 2.6', require: false
+  gem 'rubocop-rspec', '~> 1.42', require: false
+  gem 'slim_lint', '~> 0.20.1', require: false
 end
 
 group :development do
@@ -99,8 +98,8 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.32'
-  gem 'coveralls_reborn', '~> 0.15.1', require: false
+  gem 'capybara', '~> 3.33'
+  gem 'coveralls_reborn', '~> 0.16.0', require: false
   gem 'database_cleaner', '~> 1.8'
   gem 'email_spec', '~> 2.2'
   gem 'launchy', '~> 2.5'
