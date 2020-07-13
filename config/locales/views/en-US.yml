@@ -54,7 +54,7 @@ en-US:
     loading: Loading
 
   meta_title: "Open Source Carpooling Platform"
-  meta_description: "Share your itineraries, save money and earn friends."
+  meta_description: "Share your rides, save money and earn friends."
 
   loading: Loading...
   login: Log in
@@ -136,10 +136,10 @@ en-US:
         update: Itinerary successfully updated.
         destroy: Itinerary successfully destroyed.
       error:
-        create: An error occurred while creating this itinerary.
-        update: An error occurred while updating this itinerary.
-        destroy: An error occurred while destroying this itinerary.
-        pink: Pink itineraries are visible only to women.
+        create: An error occurred while creating this ride.
+        update: An error occurred while updating this ride.
+        destroy: An error occurred while destroying this ride.
+        pink: Pink rides are visible only to women.
     sessions:
       error:
         create: An error occurred while accessing the application.
@@ -220,11 +220,11 @@ en-US:
       reminder: Reminder
       new_itinerary: I am driving
       search_itineraries: I would like a ride
-      your_itineraries: Your itineraries
-      latest_itineraries: Latest Itineraries
+      your_itineraries: Your rides
+      latest_itineraries: Latest rides
       by: by
     itineraries:
-      title: Your itineraries
+      title: Your rides
     show:
       member_since: "Member since %{date}"
       see_all: See All
@@ -333,8 +333,8 @@ en-US:
       send: Send
 
   javascript:
-    no_itineraries_found: No itineraries found
-    an_error_occurred: Ops! An error occurred while searching for itineraries.
+    no_itineraries_found: No rides found
+    an_error_occurred: Ops! An error occurred while searching for rides.
     fuel_help_text: "The route is %{km} km long. Considering an average consumption of %{avg_consumption} %{fuel_currency}/km, the estimate cost is %{est}%{currency}."
     not_found: Route not found
     zero_results: No results
