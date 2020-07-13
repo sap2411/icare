@@ -284,7 +284,7 @@ en-US:
       step_1: Step 1
       step_2: Step 2
       step_3: Step 3
-      plan_route: Set up the route
+      plan_route: "Driver's destination"
       insert_itinerary_details: "Insert ride details"
       insert_details_and_confirm: "Insert ride details and confirm"
       confirm_and_share: "Confirm and share"
