@@ -66,7 +66,7 @@ class ItinerariesController < ApplicationController
   end
 
   def itinerary_attributes
-    whitelist = %i[start_address end_address description num_people smoking_allowed pets_allowed fuel_cost tolls
+    whitelist = %i[start_address end_address description num_people num_gear smoking_allowed pets_allowed fuel_cost tolls
                    avoid_highways avoid_tolls
                    round_trip leave_date return_date daily
                    route]
