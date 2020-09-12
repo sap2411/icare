@@ -1,35 +1,25 @@
 .table-responsive
   table.table.table-itinerary
     thead
-      tr
-        th = Itinerary.human_attribute_name(:start_address)
-        th = Itinerary.human_attribute_name(:end_address)
+    tr
+        - if edit
+          th = t('helpers.actions')
+        - else
+          th = 'Trip Details'
+          th = 'Date'
+          th = 'Resort'
+          th = 'Pick Up Location'
+          / th = Itinerary.human_attribute_name(:leave_date)
+          / th = Itinerary.human_attribute_name(:end_address)
+          / th = Itinerary.human_attribute_name(:start_address)
         th
           span.d-block.d-sm-none
             span.fas.fa-info-circle data-toggle='tooltip' title=t('itineraries.common.features')
           span.d-none.d-sm-block = t('itineraries.common.features')
-        - if edit
-          th = t('helpers.actions')
-        - else
           th = User.model_name.human
-          th = Itinerary.human_attribute_name(:leave_date)
     tbody
       - itineraries.each do |itinerary|
         tr.vertical-align-middle
-          td = link_to itinerary.start_address, itinerary_path(itinerary)
-          td = link_to itinerary.end_address, itinerary_path(itinerary)
-          td
-            .feature-icons
-              - if itinerary.pink?
-                span.fas.fa-lock.feature-icon.text-pink data-toggle='tooltip' title=Itinerary.human_attribute_name(:pink)
-              - if itinerary.daily?
-                span.fas.fa-redo.feature-icon data-toggle='tooltip' title=Itinerary.human_attribute_name(:daily)
-              - if itinerary.round_trip?
-                span.fas.fa-exchange-alt.feature-icon data-toggle='tooltip' title=Itinerary.human_attribute_name(:round_trip)
-              - if itinerary.pets_allowed?
-                span.fas.fa-paw.feature-icon data-toggle='tooltip' title=Itinerary.human_attribute_name(:pets_allowed)
-              - if itinerary.smoking_allowed?
-                span.fas.fa-smoking.feature-icon data-toggle='tooltip' title=Itinerary.human_attribute_name(:smoking_allowed)
           - if edit
             td
               = link_to edit_itinerary_path(itinerary), class: 'btn btn-sm btn-secondary mr-2' do
@@ -39,5 +29,21 @@
                 span.fas.fa-times<>
                 = t('helpers.links.destroy')
           - else
-            td = link_to itinerary.user, user_path(itinerary.user)
+            td = link_to edit_itinerary_path(itinerary), class: 'btn btn-sm btn-secondary mr-2' do
+                span.fas.fa-pencil-alt<>
             td = l(itinerary.leave_date.in_time_zone, format: :short)
+            td = link_to itinerary.end_address, itinerary_path(itinerary)
+            td = link_to itinerary.start_address, itinerary_path(itinerary)
+            td
+              .feature-icons
+                - if itinerary.pink?
+                  span.fas.fa-lock.feature-icon.text-pink data-toggle='tooltip' title=Itinerary.human_attribute_name(:pink)
+                - if itinerary.daily?
+                  span.fas.fa-redo.feature-icon data-toggle='tooltip' title=Itinerary.human_attribute_name(:daily)
+                - if itinerary.round_trip?
+                  span.fas.fa-exchange-alt.feature-icon data-toggle='tooltip' title=Itinerary.human_attribute_name(:round_trip)
+                - if itinerary.pets_allowed?
+                  span.fas.fa-paw.feature-icon data-toggle='tooltip' title=Itinerary.human_attribute_name(:pets_allowed)
+                - if itinerary.smoking_allowed?
+                  span.fas.fa-smoking.feature-icon data-toggle='tooltip' title=Itinerary.human_attribute_name(:smoking_allowed)
+            td = link_to itinerary.user, user_path(itinerary.user)
