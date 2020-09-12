@@ -19,6 +19,7 @@ fieldset#single
         = @itinerary.errors.messages[:tolls].join(', ')
   = f.input :description, as: :text, input_html: { rows: 5 }, hint: t('.description_hint'), wrapper: :horizontal_form
   = f.input :num_gear, as: :integer, label: 'Gear', hint: 'Number of additional skis your car can fit in your vehicle', wrapper: :horizontal_form
+  = f.input :num_people, as: :integer, label: 'Seats avalible', hint: 'Number of additional passengers your vehicle can carry for this trip', wrapper: :horizontal_form
   .form-group.row
     .col-sm-9.offset-sm-3
       - if current_user.female?
