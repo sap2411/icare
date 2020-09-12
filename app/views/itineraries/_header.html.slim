@@ -36,7 +36,7 @@
     .tag-list
       span.tag.tag-icare = t('.space_avalible')
       span.tag #{Itinerary.human_attribute_name(:seats_avalible)}: #{@itinerary.num_people}
-      span.tag #{Itinerary.human_attribute_name(:avalible_ski_space)}: #{@itinerary.num_gear}
+      span.tag #{Itinerary.human_attribute_name(:ski_space_avalible)}: #{@itinerary.num_gear}
     .tag-list
       - if @itinerary.pink?
         span.tag.tag-pink data-toggle='tooltip' title=t('itineraries.form.pink_hint')
