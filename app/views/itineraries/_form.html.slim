@@ -22,6 +22,7 @@ fieldset#single
     .col-sm-9.offset-sm-3
       - if current_user.female?
         = f.input :pink, as: :boolean, hint: t('.pink_hint'), wrapper: false
+      = f.input :num_gear, as: :integer, hint: 'Number of Skis Your Car Can Fit'
       = f.input :smoking_allowed, as: :boolean, wrapper: false
       = f.input :pets_allowed, as: :boolean, wrapper: false
 
